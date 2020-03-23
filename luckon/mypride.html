@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="mypride.css">
+  <script type="text/javascript" src="./lib/jquery-3.4.1.min.js"></script>
+  <title>Luckon | login page</title>
+</head>
+
+<body>
+  <div class="main main-sm main-md">
+    <form method="GET" action="">
+      <div class="form-wrapper-outer">
+        <div class="form-logo">
+          <img src="" alt="logo">
+        </div>
+        <div class="form-greeting">
+          <span>It's nice to see you here again.</span>
+        </div>
+        <div id="errormsg" class="errormsg"></div>
+
+        <div class="field-wrapper">
+          <input type="text" name="username" id="user-input" required>
+          <div class="field-placeholder"><span>Enter your username</span></div>
+        </div>
+        <div class="field-wrapper">
+          <input type="password" name="password" id="pass-input" required>
+          <div class="field-placeholder"><span>Enter your password</span></div>
+        </div>
+        <p id="password-length" class="password-error">please enter a password between 6 and 12 characters</p>
+        <div id="forget-pswd" class="forgetpassword">
+          <p>forget <a href="#"> password</a>?</p>
+        </div>
+        <div class="form-button">
+          <button type="submit" class="btn btn-primary" id="submitbtn">Login</button>
+        </div>
+        <div class="haveacct">
+          <p>
+            Don't have an account? <a href="#" class="acctlogin">Sign up</a>
+          </p>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script src="mypride.js"></script>
+</body>
+
+</html>

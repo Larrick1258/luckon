@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+  <script type="text/javascript" src="./lib/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="vanilla.css">
+  <title>Luckon | sign up</title>
+</head>
+
+<body>
+
+  <div class="main main-sm main-md">
+    <form method="GET" action="">
+      <div class="form-wrapper-outer">
+        <div class="form-logo">
+          <img src="" alt="logo">
+        </div>
+        <div class="form-greeting">
+          <span>Welcome to Luckon &#x1F970;.</span>
+        </div>
+        <div id="errormsg" class="errormsg"></div>
+        <div id="successmsg" class="successmsg"></div>
+
+        <div class="field-wrapper">
+          <input type="text" name="firstname" id="first-name" required>
+          <div class="field-placeholder"><span>Enter first name</span></div>
+        </div>
+
+        <div class="field-wrapper">
+          <input type="text" name="lastname" id="last-name" required>
+          <div class="field-placeholder"><span>Enter last name</span></div>
+        </div>
+
+        <div class="field-wrapper">
+          <input type="text" name="username" id="user-input" required>
+          <div class="field-placeholder"><span>Enter username</span></div>
+        </div>
+
+        <div class="field-wrapper">
+          <input type="text" pattern=".+@.+\..+" name="email" id="email-input" required>
+          <div class="field-placeholder"><span>Enter email</span></div>
+        </div>
+
+        <div class="field-wrapper">
+          <input type="password" name="password" id="pass-input" required>
+          <div class="field-placeholder"><span>Enter password</span></div>
+        </div>
+        <p id="password-length" class="password-error">please enter a password between 6 and 12 characters</p>
+
+        <div class="field-wrapper">
+          <input type="password" name="confirmPassword" id="confirm-password" required>
+          <div class="field-placeholder"><span>confirm password</span></div>
+        </div>
+        <p id="confirm-error" class="password-error"></p>
+
+        <p class="terms"> <input type="checkbox" aria-checked="true" /> By clicking the checkbox you agree to our <a href="#">Terms &
+            Privacy</a>.</p>
+
+        <div class="form-button">
+          <button type="submit" class="btn btn-primary" id="submitbtn">Sign up</button>
+        </div>
+
+        <div class="haveacct">
+          <p>
+            Already have an account? <a href="#" class="acctlogin">Login</a>
+          </p>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script src="vanilla.js"></script>
+</body>
+
+</html>
